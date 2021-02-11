@@ -65,7 +65,7 @@ body {
 }
 
 .container .user h1 {
-  font-size: 20px;
+  font-size: 21px;
   margin: 1rem 0 1rem 0;
 }
 
@@ -167,6 +167,7 @@ body {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: a;
+    background-position: 78% 0%;
   }
   .container .user-2 {
     -ms-grid-row: 1;
