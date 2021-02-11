@@ -1,0 +1,64 @@
+@include media-md 
+{
+    .container .user img
+    {
+        width: 8%;
+    }
+}
+
+@include media-lg
+{
+    body 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container
+    {
+        margin: 5% auto 5% auto;
+        width:86%;
+        padding:1rem;
+        grid-template-areas: 
+        "a a a b e"
+        "c d d d e";
+
+        .user 
+        {
+            @include img-config(2.5vw,100%,0 2% 0 0);
+
+            h1 
+            {
+                font-size: 21px;
+                margin-bottom: 2rem;
+            }
+            p
+            {
+                font-size: 16px;
+            }
+        }
+        
+        .user-1
+        {
+            grid-area: a;
+        }
+        .user-2
+        {
+            grid-area: b;
+        }
+        .user-3
+        {
+            grid-area: c;
+        }
+        .user-4
+        {
+            grid-area: d;
+        }
+        .user-5
+        {
+            grid-area: e;
+            @include item-config($white,90%);
+        }
+    }
+}
